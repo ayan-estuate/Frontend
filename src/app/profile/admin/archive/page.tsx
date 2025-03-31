@@ -55,6 +55,9 @@ const ArchivePage = () => {
       setTotalPages(response.data.totalPages); // Set total pages for pagination
     } catch (error) {
       console.error("Error fetching users:", error);
+      throw new Error(
+        error instanceof Error ? error.message : "Failed to fetch users"
+      );
     }
   };
 
@@ -69,7 +72,7 @@ const ArchivePage = () => {
 
   const openDeletionModal = () => {
     if (selectedUsers.length === 0) return;
-    
+
     setModalBody(
       <div>
         <p>Are you sure you want to delete the following users?</p>
@@ -92,7 +95,9 @@ const ArchivePage = () => {
       setShowModal(false);
     } catch (error) {
       console.error("Error deleting users:", error);
-      // Handle error - you might want to show an error message
+      throw new Error(
+        error instanceof Error ? error.message : "Failed to delete users"
+      );
     }
   };
 
@@ -101,9 +106,9 @@ const ArchivePage = () => {
   return (
     <DashboardLayout>
       <div className="archive-container">
-        <DataTable 
-          rows={users} 
-          headers={headers} 
+        <DataTable
+          rows={users}
+          headers={headers}
           isSortable
           // Removed onSelectionChange as it is not a valid prop
         >
@@ -192,7 +197,7 @@ const ArchivePage = () => {
                           <TableSelectRow
                             {...getSelectionProps({
                               row,
-                              onChange: () => handleRowSelection(rows)
+                              onChange: () => handleRowSelection(rows),
                             })}
                           />
                           {row.cells.map((cell) => (

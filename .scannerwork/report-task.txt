@@ -2,5 +2,5 @@ projectKey=optim_v3
 serverUrl=http://localhost:9000
 serverVersion=25.3.0.104237
 dashboardUrl=http://localhost:9000/dashboard?id=optim_v3
-ceTaskId=875a2c82-654d-4d90-9c4f-f3fc108ef28e
-ceTaskUrl=http://localhost:9000/api/ce/task?id=875a2c82-654d-4d90-9c4f-f3fc108ef28e
+ceTaskId=dae729ea-0825-4251-80d5-33f2d7781016
+ceTaskUrl=http://localhost:9000/api/ce/task?id=dae729ea-0825-4251-80d5-33f2d7781016

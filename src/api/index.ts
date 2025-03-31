@@ -41,9 +41,13 @@ api.interceptors.response.use(
       } catch (refreshError) {
         console.error("Refresh token failed", refreshError);
         logout(); // Clear tokens and redirect
+        return Promise.reject(new Error('Token refresh failed'));
       }
     }
-    return Promise.reject(error);
+    // Ensure we reject with an Error object
+    return Promise.reject(
+      new Error(error.response?.data?.message || error.message || 'An error occurred')
+    );
   }
 );
 
@@ -63,17 +67,12 @@ export const login = async (data: { email: string; password: string }) => {
 // Logout (Clear tokens)
 export const logout = async () => {
   try {
-    // Send request to backend to clear refresh token cookie
     await axios.post(`${API_BASE_URL}/auth/logout`, {}, { withCredentials: true });
-
-    // Remove access token from localStorage
     localStorage.removeItem("accessToken");
-
-    // Redirect to login page
     window.location.href = "/login";
   } catch (error) {
     console.error("Failed to logout", error);
-    // Handle any errors if the logout request fails
+    throw new Error(error instanceof Error ? error.message : 'Failed to logout');
   }
 };
 
@@ -84,7 +83,7 @@ export const getUserByEmail = async (email: string) => {
     return response.data;
   } catch (error) {
     console.error("Error fetching user by email", error);
-    throw error;
+    throw new Error(error instanceof Error ? error.message : 'Failed to fetch user by email');
   }
 };
 
@@ -98,7 +97,7 @@ export const updateUser = async (
     return response.data;
   } catch (error) {
     console.error("Error updating user", error);
-    throw error;
+    throw new Error(error instanceof Error ? error.message : 'Failed to update user');
   }
 };
 
@@ -114,7 +113,7 @@ export const getUserFromToken = async (token: string) => {
     return response.data; // The username or email will be in response.data
   } catch (error) {
     console.error("Error fetching user from token", error);
-    throw error;
+    throw new Error(error instanceof Error ? error.message : 'Failed to fetch user from token');
   }
 };
 
@@ -124,7 +123,7 @@ export const deleteUser = async (id: string) => {
     await api.delete(`/users/${id}`);
   } catch (error) {
     console.error("Error deleting user", error);
-    throw error;
+    throw new Error(error instanceof Error ? error.message : 'Failed to delete user');
   }
 };
 
