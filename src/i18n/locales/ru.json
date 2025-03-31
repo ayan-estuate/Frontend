@@ -1,0 +1,19 @@
+{
+  "translations": {
+    "welcome": "Добро пожаловать",
+    "subtitle": "Решение для управления данными",
+    "login": "Вход",
+    "email": "Email",
+    "password": "Пароль",
+    "forgotPassword": "Забыли пароль?",
+    "loginButton": "Войти",
+    "loggingIn": "Загрузка...",
+    "noAccount": "Новый пользователь?",
+    "signUp": "Регистрация",
+    "invalidEmail": "Неверный email",
+    "emailRequired": "Требуется email",
+    "passwordRequired": "Требуется пароль",
+    "loginSuccess": "Успешно!",
+    "invalidCredentials": "Неверные данные"
+  }
+}

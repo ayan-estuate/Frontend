@@ -1,0 +1,19 @@
+{
+  "translations": {
+    "welcome": "Willkommen",
+    "subtitle": "Datenverwaltungslösung",
+    "login": "Anmelden",
+    "email": "Email",
+    "password": "Passwort",
+    "forgotPassword": "Passwort vergessen?",
+    "loginButton": "Anmelden",
+    "loggingIn": "Lädt...",
+    "noAccount": "Neuer Benutzer?",
+    "signUp": "Registrieren",
+    "invalidEmail": "Ungültige Email",
+    "emailRequired": "Email erforderlich",
+    "passwordRequired": "Passwort erforderlich",
+    "loginSuccess": "Erfolg!",
+    "invalidCredentials": "Ungültige Anmeldedaten"
+  }
+}

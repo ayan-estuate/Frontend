@@ -1,0 +1,19 @@
+{
+  "translations": {
+    "welcome": "Witamy",
+    "subtitle": "Rozwiązanie do zarządzania danymi",
+    "login": "Logowanie",
+    "email": "Email",
+    "password": "Hasło",
+    "forgotPassword": "Zapomniałeś hasła?",
+    "loginButton": "Zaloguj",
+    "loggingIn": "Ładowanie...",
+    "noAccount": "Nowy użytkownik?",
+    "signUp": "Zarejestruj się",
+    "invalidEmail": "Nieprawidłowy email",
+    "emailRequired": "Email wymagany",
+    "passwordRequired": "Hasło wymagane",
+    "loginSuccess": "Sukces!",
+    "invalidCredentials": "Nieprawidłowe dane"
+  }
+}

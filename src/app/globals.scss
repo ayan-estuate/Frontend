@@ -1,0 +1,116 @@
+@use '@carbon/styles';
+@use "@carbon/react" as *;
+@use "@carbon/react/scss/spacing" as *;
+@use "@carbon/react/scss/breakpoint" as *;
+@use "@carbon/react/scss/type" as *;
+@use "@carbon/react/scss/colors" as *;
+@use "@carbon/react/scss/layer" as *;
+
+
+@use './signup/signup.module.scss';
+@use './login/login.module.scss';
+@use '../styles/header.module.scss';
+@use '../styles/DashboardLayout.module.scss';
+@use './profile/admin/dashboard/dashboard.module.scss';
+@use './profile/admin/archive/archive.module.scss';
+
+.light-theme {
+  --background-color: #ffffff;
+  --text-color: #161616;
+  --primary-button-bg: #0f62fe;
+  --secondary-bg: #f4f4f4;
+  --border-color: #e0e0e0;
+  --header-bg: #ffffff;
+  --dropdown-bg: #ffffff;
+  --hover-color: #e8e8e8;
+  --link-color: #0f62fe;
+  --error-color: #da1e28;
+  --success-color: #24a148;
+}
+
+.dark-theme {
+  --background-color: #161616;
+  --text-color: #ffffff;
+  --primary-button-bg: #0353e9;
+  --secondary-bg: #262626;
+  --border-color: #393939;
+  --header-bg: #262626;
+  --dropdown-bg: #363636;
+  --hover-color: #363636;
+  --link-color: #78a9ff;
+  --error-color: #ff8389;
+  --success-color: #42be65;
+}
+
+/* Global theme application */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+
+}
+
+/* Carbon component theme overrides */
+.cds--header {
+  background-color: var(--header-bg);
+}
+
+.cds--side-nav {
+  background-color: var(--secondary-bg);
+  border-right: 1px solid var(--border-color);
+}
+
+.cds--dropdown {
+  background-color: var(--dropdown-bg);
+}
+
+.cds--btn {
+  background-color: var(--primary-button-bg);
+}
+
+.cds--link {
+  color: var(--link-color);
+}
+
+/* Custom components theming */
+.profile-dropdown {
+  background-color: var(--dropdown-bg);
+  border: 1px solid var(--border-color);
+}
+
+.dashboard-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--background-color);
+
+  .dashboard-content {
+    flex: 1;
+    padding: 2rem;
+    background-color: var(--background-color);
+  }
+}
+
+/* Add transitions for smooth theme switching */
+* {
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Tables */
+table {
+  background-color: var(--secondary-bg);
+  border-color: var(--border-color);
+}
+
+/* Forms */
+input, textarea, select {
+  background-color: var(--secondary-bg);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+/* Cards */
+.cds--tile {
+  background-color: var(--secondary-bg);
+  border-color: var(--border-color);
+}

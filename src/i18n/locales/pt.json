@@ -1,0 +1,19 @@
+{
+  "translations": {
+    "welcome": "Bem-vindo",
+    "subtitle": "Solução de Gestão de Dados",
+    "login": "Entrar",
+    "email": "Email",
+    "password": "Senha",
+    "forgotPassword": "Esqueceu a senha?",
+    "loginButton": "Entrar",
+    "loggingIn": "Carregando...",
+    "noAccount": "Novo usuário?",
+    "signUp": "Cadastrar",
+    "invalidEmail": "Email inválido",
+    "emailRequired": "Email obrigatório",
+    "passwordRequired": "Senha obrigatória",
+    "loginSuccess": "Sucesso!",
+    "invalidCredentials": "Credenciais inválidas"
+  }
+}

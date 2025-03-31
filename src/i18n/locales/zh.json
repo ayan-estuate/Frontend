@@ -1,0 +1,19 @@
+{
+  "translations": {
+    "welcome": "欢迎",
+    "subtitle": "数据管理解决方案",
+    "login": "登录",
+    "email": "邮箱",
+    "password": "密码",
+    "forgotPassword": "忘记密码？",
+    "loginButton": "登录",
+    "loggingIn": "加载中...",
+    "noAccount": "新用户？",
+    "signUp": "注册",
+    "invalidEmail": "无效邮箱",
+    "emailRequired": "需要邮箱",
+    "passwordRequired": "需要密码",
+    "loginSuccess": "成功！",
+    "invalidCredentials": "无效凭据"
+  }
+}

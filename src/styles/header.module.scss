@@ -1,0 +1,84 @@
+/* Profile Container */
+.profile-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Profile Dropdown */
+.profile-dropdown {
+  position: absolute;
+  top: 48px;
+  right: 0;
+  width: 280px;
+  background-color: var(--dropdown-bg);
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+  z-index: 9000;
+  border: none;
+
+  .profile-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    border-bottom: 1px solid var(--border-color);
+    
+    .profile-name {
+      font-size: 14px;
+      font-weight: 600;
+      margin: 0;
+    }
+  }
+
+  .logout-button {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #da1e28;
+    font-size: 14px;
+    
+    &:hover {
+      background-color: rgba(218, 30, 40, 0.1);
+    }
+
+    svg {
+      margin-right: 8px;
+    }
+  }
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f4f4f4;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  cursor: pointer;
+  
+  &:hover {
+    background-color: var(--hover-color);
+  }
+}
+
+/* Header Navigation */
+.header-nav-item {
+  padding: 0 16px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  text-decoration: none;
+  
+  &:hover {
+    background-color: var(--hover-color);
+  }
+}

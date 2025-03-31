@@ -1,0 +1,99 @@
+
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    background: #f4f6f8; /* Subtle background color for the dashboard */
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.dashboard-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #161616; /* Darker text for better contrast */
+    margin-bottom: 0.5rem;
+}
+
+.dashboard-subtitle {
+    font-size: 16px;
+    color: #525252; /* Lighter gray for subtitle */
+    margin-bottom: 1.5rem;
+}
+
+.admin-title {
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: center;
+    color: #161616;
+}
+
+.tile-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.dashboard-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    width: 280px;
+    min-height: 160px;
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for a clean, modern look */
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    margin-bottom: 16px;
+
+    &:hover {
+        background: #e5e5e5; /* Subtle hover effect */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+        transform: translateY(-4px); /* Slight lifting effect */
+    }
+
+    &:focus {
+        outline: none;
+        border: 2px solid #0f62fe; /* IBM blue on focus for accessibility */
+    }
+}
+
+.tile-icon {
+    margin-bottom: 12px;
+    color: #0f62fe; /* IBM primary blue for icons */
+    font-size: 24px; /* Larger icons for better visibility */
+}
+
+.tile-text {
+    font-size: 18px;
+    font-weight: 600; /* Slightly heavier font weight for readability */
+    color: #161616; /* Darker text for contrast */
+    line-height: 1.5; /* Ensures text is legible and comfortable to read */
+}
+
+@media (max-width: 768px) {
+    .tile-section {
+        gap: 8px;
+    }
+
+    .dashboard-tile {
+        width: 220px;
+        padding: 16px;
+    }
+}

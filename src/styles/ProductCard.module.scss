@@ -1,0 +1,60 @@
+@use '@carbon/react/scss/theme' as *;
+@use '@carbon/react/scss/spacing' as *;
+.productCard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: $spacing-05;
+  transition: transform 0.2s ease-in-out;
+  min-height: 400px;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.productContent {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.productCardHeader {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.productImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.productTitle {
+  font-size: 1.125rem;
+  margin: 0.5rem 0;
+  font-weight: 600;
+}
+
+.productDescription {
+  font-size: 0.875rem;
+  color: #666;
+  margin: 0.5rem 0;
+  // Limit description to 3 lines
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.productPrice {
+  margin-top: auto;
+  font-size: 1rem;
+  font-weight: 500;
+}

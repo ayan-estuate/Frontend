@@ -1,0 +1,19 @@
+{
+  "translations": {
+    "welcome": "Welcome",
+    "subtitle": "Data Management Solution",
+    "login": "Login",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot password?",
+    "loginButton": "Login",
+    "loggingIn": "Loading...",
+    "noAccount": "New user?",
+    "signUp": "Sign up",
+    "invalidEmail": "Invalid email",
+    "emailRequired": "Email required",
+    "passwordRequired": "Password required",
+    "loginSuccess": "Success!",
+    "invalidCredentials": "Invalid login"
+  }
+}

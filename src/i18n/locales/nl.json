@@ -1,0 +1,19 @@
+{
+  "translations": {
+    "welcome": "Welkom",
+    "subtitle": "Databeheersoplossing",
+    "login": "Inloggen",
+    "email": "Email",
+    "password": "Wachtwoord",
+    "forgotPassword": "Wachtwoord vergeten?",
+    "loginButton": "Inloggen",
+    "loggingIn": "Laden...",
+    "noAccount": "Nieuwe gebruiker?",
+    "signUp": "Registreren",
+    "invalidEmail": "Ongeldige email",
+    "emailRequired": "Email verplicht",
+    "passwordRequired": "Wachtwoord verplicht",
+    "loginSuccess": "Succes!",
+    "invalidCredentials": "Ongeldige gegevens"
+  }
+}

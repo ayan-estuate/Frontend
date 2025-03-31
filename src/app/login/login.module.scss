@@ -1,0 +1,83 @@
+.login-container {
+    display: flex;
+    height: 100vh;
+    padding: 0 !important; /* Removes extra padding */
+    margin: 0 !important;
+    width: 100vw;
+  }
+  
+  .left-panel {
+    flex: 1;
+    background: url("https://www.kyvosinsights.com/wp-content/uploads/2022/07/Live-Connection-to-Your-BI-tools1-.svg") center/cover no-repeat;
+    color: white;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+  }
+  
+  .right-panel {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+  }
+  
+  .login-box {
+    background: white;
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .login-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .login-options {
+    text-align: right;
+  
+    a {
+      color: #0f62fe;
+      text-decoration: none;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  .signup-link {
+    text-align: center;
+    margin-top: 1.5rem;
+  
+    a {
+      color: #0f62fe;
+      text-decoration: none;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  .left-panel, .right-panel {
+    padding: 0 !important;
+  }
+
+.language-switcher {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 120px;
+}
